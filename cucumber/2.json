@@ -1,0 +1,118 @@
+[
+  {
+    "line": 3,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 2120215138,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setup(Scenario)"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "Search for eggs",
+        "description": "",
+        "id": "google-search-for-eggs;search-for-eggs",
+        "after": [
+          {
+            "result": {
+              "duration": 61692988,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 11750664313,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I navigate to Google page",
+            "match": {
+              "location": "Stepdefs.iNavigateToGoogleCom()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 13714667263,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I search for \"Eggs!\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Eggs!",
+                  "offset": 14
+                }
+              ],
+              "location": "Stepdefs.iSearchFor(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 101044695,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "first result should contain word \"eggs\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "eggs",
+                  "offset": 34
+                }
+              ],
+              "location": "Stepdefs.firstResultShouldContainWord(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@all"
+          },
+          {
+            "name": "@eggs"
+          }
+        ]
+      }
+    ],
+    "name": "Google Search For Eggs",
+    "description": "",
+    "id": "google-search-for-eggs",
+    "keyword": "Feature",
+    "uri": "/Users/mh/learningo/automation/iljapavlovs/cucumber-jvm-parallel-template/src/test/resources/features/eggs.feature",
+    "tags": [
+      {
+        "name": "@all",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      },
+      {
+        "name": "@eggs",
+        "type": "Tag",
+        "location": {
+          "line": 2,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

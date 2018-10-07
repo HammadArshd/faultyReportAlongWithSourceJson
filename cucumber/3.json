@@ -1,0 +1,118 @@
+[
+  {
+    "line": 3,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 1917840717,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setup(Scenario)"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "Search for milk",
+        "description": "",
+        "id": "google-search-for-milk;search-for-milk",
+        "after": [
+          {
+            "result": {
+              "duration": 62545732,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 6467859499,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I navigate to Google page",
+            "match": {
+              "location": "Stepdefs.iNavigateToGoogleCom()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 15936774354,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I search for \"Milk!\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Milk!",
+                  "offset": 14
+                }
+              ],
+              "location": "Stepdefs.iSearchFor(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 112136331,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "first result should contain word \"milk\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "milk",
+                  "offset": 34
+                }
+              ],
+              "location": "Stepdefs.firstResultShouldContainWord(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@all"
+          },
+          {
+            "name": "@milk"
+          }
+        ]
+      }
+    ],
+    "name": "Google Search For Milk",
+    "description": "",
+    "id": "google-search-for-milk",
+    "keyword": "Feature",
+    "uri": "/Users/mh/learningo/automation/iljapavlovs/cucumber-jvm-parallel-template/src/test/resources/features/milk.feature",
+    "tags": [
+      {
+        "name": "@all",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      },
+      {
+        "name": "@milk",
+        "type": "Tag",
+        "location": {
+          "line": 2,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

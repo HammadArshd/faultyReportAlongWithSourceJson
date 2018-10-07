@@ -1,0 +1,130 @@
+[
+  {
+    "line": 3,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 2022742560,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setup(Scenario)"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "Search for cheese",
+        "description": "",
+        "id": "google-search-for-cheese;search-for-cheese",
+        "after": [
+          {
+            "result": {
+              "duration": 62907575,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 11918366300,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I navigate to Google page",
+            "match": {
+              "location": "Stepdefs.iNavigateToGoogleCom()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 15330736997,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I search for \"Cheese!\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Cheese!",
+                  "offset": 14
+                }
+              ],
+              "location": "Stepdefs.iSearchFor(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 100868481,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "first result should contain word \"cheese\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "cheese",
+                  "offset": 34
+                }
+              ],
+              "location": "Stepdefs.firstResultShouldContainWord(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1349205,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I purposefully fail this scenario to get a screenshot",
+            "match": {
+              "location": "Stepdefs.iPurposefullyFailThisFeature()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@all"
+          },
+          {
+            "name": "@cheese"
+          }
+        ]
+      }
+    ],
+    "name": "Google Search For Cheese",
+    "description": "",
+    "id": "google-search-for-cheese",
+    "keyword": "Feature",
+    "uri": "/Users/mh/learningo/automation/iljapavlovs/cucumber-jvm-parallel-template/src/test/resources/features/cheese.feature",
+    "tags": [
+      {
+        "name": "@all",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      },
+      {
+        "name": "@cheese",
+        "type": "Tag",
+        "location": {
+          "line": 2,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
